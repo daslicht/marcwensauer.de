@@ -53,6 +53,7 @@ $(document).ready(function(){
     $(window).scroll(function(){
          var scrollPos = $(window).scrollTop();
           console.log(scrollPos);
+          
           if(scrollPos >= navOffset) {
             if({{loggedIn}}) {
                nav.addClass("fixed-admin");
