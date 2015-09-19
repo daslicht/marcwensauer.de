@@ -1,0 +1,36 @@
+<div class="blog-comment {{comment.comment_type}}" id="blog-comment-{{comment.ID}}">
+	<h5 class="comment-author">{{comment.author.name}} says</h5>
+	<div class="comment-content">{{comment.comment_content|wpautop}}</div>
+
+		{# 	{{ //function('doit',comment.ID, post.ID) }} #}
+
+</div>
+
+
+{# 
+<?php if(have_comments()):?>
+	 <h2 id="comments-title">
+        There are <?php comments_number( 'no comments', 'one comment', '% comments' ); ?>
+    </h2>
+<?php endif?>
+
+<!-- Comment Navigation -->
+<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
+    <nav id="comment-nav-above">
+        <div class="nav-previous">
+            <?php previous_comments_link( '&larr; Older comments' ); ?>
+        </div>
+        <div class="nav-next">
+            <?php next_comments_link( 'Newer comments &rarr;' ); ?>
+        </div>
+    </nav>
+<?php endif; ?>
+
+
+<ol class="commentlist">
+	<!--List Comments-->
+	<?php wp_list_comments(); ?>
+</ol>
+
+<!-- Comment Form -->
+<?php comment_form(); ?> #}

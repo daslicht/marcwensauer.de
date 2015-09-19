@@ -1,0 +1,36 @@
+{% extends "tease.twig" %}
+
+{% block content %}
+    
+    {% if post.get_thumbnail %}
+		<img src="{{post.thumbnail.src}}" />
+	{% endif %}
+
+	<h2>{{post.title}}
+        <br>
+        <small>{{post.date}}</small>
+    </h2>
+	<p>{{ post.get_preview(50,  false, '', true) }}</p>
+	<a href="{{post.permalink}}" class="btn btn-default btn-lg">Read More</a>
+	<hr>
+	<br>
+
+{% endblock %}
+
+
+
+{# <div class="col-lg-12 text-center">
+	{% block content %}
+        {% if post.get_thumbnail %}
+			<img src="{{post.thumbnail.src}}" />
+		{% endif %}
+        <h2>{{post.title}}
+            <br>
+            <small>October 13, 2013</small>
+        </h2>
+        <p>{{ post.get_preview(50,  false, '', true) }}</p>
+        <a href="#" class="btn btn-default btn-lg">Read More</a>
+        <hr>
+    {% endblock %}
+</div>
+<div class="clearfix"></div> #}

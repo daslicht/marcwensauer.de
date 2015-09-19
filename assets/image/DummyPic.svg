@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="389px" height="372px" viewBox="0 0 389 372" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.3 (7892) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Group" sketch:type="MSLayerGroup" transform="translate(14.000000, 8.000000)">
+            <path d="M67.9825623,313.652017 C125.256708,351.780954 184.653926,357.860768 201.2812,330.85204 C218.003035,304.41825 193.23915,258.19299 145.515488,224.888396 C97.3875215,189.12525 36.6008154,174.757988 10.218996,195.745505 C-16.0391968,217.481478 10.1121426,272.019437 67.9825623,313.652017 Z" id="Oval-2" stroke="#232374" stroke-width="20" filter="url(#filter-1)" sketch:type="MSShapeGroup"></path>
+            <path d="M87.7091969,286.785466 C112.738687,303.44827 138.695985,306.105222 145.962304,294.302082 C153.269947,282.750199 142.447831,262.549204 121.592017,247.994696 C100.559517,232.365772 73.9949962,226.087106 62.4658241,235.258903 C50.9906782,244.757784 62.4191279,268.591528 87.7091969,286.785466 Z" id="Oval-6" fill="#232374" filter="url(#filter-2)" sketch:type="MSShapeGroup"></path>
+            <path d="M290.480697,65.7015191 C306.050367,76.0666671 322.197184,77.7194322 326.717219,70.3772535 C331.262961,63.191369 324.531031,50.6252788 311.557608,41.5716027 C298.474278,31.8495824 281.949736,27.9439192 274.777979,33.6492635 C267.63983,39.5580717 274.748932,54.3839247 290.480697,65.7015191 Z" id="Oval-7" fill="#232374" sketch:type="MSShapeGroup"></path>
+            <path d="M276.565673,83.6817237 C314.11149,108.676982 353.049077,112.662578 363.949014,94.9571237 C374.91094,77.6285683 358.677084,47.3258002 327.392044,25.4931185 C295.841966,2.04874374 255.993505,-7.3696518 238.699018,6.38862343 C221.485574,20.6375458 238.628971,56.3896675 276.565673,83.6817237 Z" id="Oval-8" stroke="#232374" stroke-width="15" sketch:type="MSShapeGroup"></path>
+            <path d="M179.068349,242.312547 C184.89239,179.703454 194.264237,55.7162422 194.264237,55.7162422 C194.264237,55.7162422 219.998211,55.3941212 220.254433,57.5336538 C230.007483,138.974605 233.975859,243.402866 233.975859,243.402866 L180.382459,248.09123 C180.382459,248.09123 178.894462,244.181852 179.068349,242.312547 Z" id="Triangle-2" fill="#232374" sketch:type="MSShapeGroup" transform="translate(206.950887, 151.968627) rotate(41.000000) translate(-206.950887, -151.968627) "></path>
+        </g>
+    </g>
+</svg>
