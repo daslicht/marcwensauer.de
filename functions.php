@@ -40,6 +40,15 @@ class StarterSite extends TimberSite {
 		$context['notes'] = 'These values are available everytime you call Timber::get_context();';
 		$context['menu'] = new TimberMenu();
 		$context['site'] = $this;
+		$context['title'] = "WELCOME";
+
+
+
+		if(is_user_logged_in()) {
+			$context['loggedIn'] = 1;
+		}else{
+			$context['loggedIn'] = 0;
+		}
 		return $context;
 	}
 

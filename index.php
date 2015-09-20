@@ -21,13 +21,6 @@ $context = Timber::get_context();
 $context['posts'] = Timber::get_posts();
 $context['foo'] = 'bar';
 $context['pagination'] = Timber::get_pagination();
-$context['title'] = "WELCOME";
-
-if(is_user_logged_in()){
-	$context['loggedIn'] = 1;
-}else{
-	$context['loggedIn'] = 0;
-}
 
 $templates = array( 'index.twig' );
 if ( is_home() ) {

@@ -456,3 +456,31 @@ textarea.form-control {
 .nav-placeholder {
     margin-bottom:35px;
 }
+
+.qtranxs_language_chooser{
+    float:right;
+    list-style: none;
+    margin-right: 100px;
+}
+
+.qtranxs_language_chooser li{
+    margin:3px;
+    float:left;
+    position:absolute;
+}
+.qtranxs_language_chooser li.active{
+    display: none;
+}
+
+.qtranxs_language_chooser img {
+    width:23px;
+    margin-left: 1px;
+    margin-top: 1px;
+    position: absolute;
+}
+.qtranxs_language_chooser a {
+    width: 25px;
+    height: 17px;
+    display: block;
+}
+
