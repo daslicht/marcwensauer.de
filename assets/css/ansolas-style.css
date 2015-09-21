@@ -205,7 +205,10 @@ hr {
 
 }*/
 
-.navbar-default .navbar-nav > .current-menu-item > a, .navbar-default .navbar-nav > .current-menu-item > a:hover, .navbar-default .navbar-nav > .current-menu-item > a:focus, a:hover {
+.navbar-default .navbar-nav > .current-menu-item > a, 
+.navbar-default .navbar-nav > .current-menu-item > a:hover, 
+.navbar-default .navbar-nav > .current-menu-item > a:focus, 
+.nav-item a:hover { 
     color: #555;
     background-color: rgb(255, 253, 201) !important;
 
@@ -260,11 +263,21 @@ header {
 
 }
 
-/* FOOTER SOCIAL ICONS */
-.social-icon{
-    /*margin: 43px; */
-    width: 50px;
-}
+/**
+ * FOOTER SOCIAL ICONS
+ */
+    .social-icon {
+        /*margin: 43px; */
+        width: 50px;
+    }
+
+    .social-url{
+        opacity:0.85;
+    }
+    .social-url:hover{
+        opacity:1;
+    }
+
 
 
 @media screen and (min-width:768px) {
@@ -457,30 +470,44 @@ textarea.form-control {
     margin-bottom:35px;
 }
 
-.qtranxs_language_chooser{
-    float:right;
-    list-style: none;
-    margin-right: 100px;
-}
+/* QTRANSLATE Language Chooser */
 
-.qtranxs_language_chooser li{
-    margin:3px;
-    float:left;
-    position:absolute;
-}
-.qtranxs_language_chooser li.active{
-    display: none;
-}
+    .qtranxs_language_chooser {
+      /*background-color:red;*/
+        padding:0 !important;
+        width:25px;
+        margin:0 auto
+    }
 
-.qtranxs_language_chooser img {
-    width:23px;
-    margin-left: 1px;
-    margin-top: 1px;
-    position: absolute;
-}
-.qtranxs_language_chooser a {
-    width: 25px;
-    height: 17px;
-    display: block;
-}
+    .qtranxs_language_chooser li.active {
+        display:none
+    }
+
+    .qtranxs_language_chooser li {
+        list-style:none; 
+    }
+
+    .qtranxs_language_chooser li a{
+        background-color:none;
+        /* width:23px; */
+        margin:  0 auto;
+    }
+
+    .qtranxs_language_chooser li a:hover {
+        background-color: rgba(0, 0, 0,0) !important;
+    }
+    .qtranxs_language_chooser li a img{
+        /*background-color:green;*/
+        opacity:0.5;
+        width:25px;
+        transition: opacity .25s ease-in-out;
+        -moz-transition: opacity .25s ease-in-out;
+        -webkit-transition: opacity .25s ease-in-out;
+        border-radius: 2px;
+    }
+
+    .qtranxs_language_chooser li a img:hover{
+        opacity:1;
+    }
+
 
