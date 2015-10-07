@@ -90,9 +90,9 @@ new StarterSite();
 
 function add_parent_url_menu_class( $classes = array(), $item = false ) {
 
-ChromePhp::log('$item:',  $item);
+//ChromePhp::log('$item:',  $item);
 
-ChromePhp::log('$classes:',  $classes);
+//ChromePhp::log('$classes:',  $classes);
 
  // if($item->__title == 'KONTAKT'){
 	// $classes[] = 'current-menu-item';
