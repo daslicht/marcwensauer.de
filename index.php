@@ -21,7 +21,7 @@ $context = Timber::get_context();
 $context['posts'] = Timber::get_posts();
 $context['foo'] = 'bar';
 $context['pagination'] = Timber::get_pagination();
-     	 \ChromePhp::log('checkit index.php' ); 
+     	
 
 $templates = array( 'index.twig' );
 
