@@ -39,8 +39,30 @@ class StarterSite extends TimberSite {
 		$context['stuff'] = 'I am a value set in your functions.php file';
 		$context['notes'] = 'These values are available everytime you call Timber::get_context();';
 		$context['menu'] = new TimberMenu();
+		$context['menu']->current;
+		
 		$context['site'] = $this;
 		$context['title'] = "WELCOME";
+		$context['layout'] = "base.twig";
+
+
+	
+		if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
+			$context['layout'] = "base-ajax.twig";
+		}
+//
+
+ // $request_url = $_SERVER['REQUEST_URI'];
+ // ChromePhp::log('$request_url :',$request_url ); 
+
+ // if($request_url == "/de/kontakt" || $request_url == "/en/contact"  ){
+ // 	 ChromePhp::log('kontakt'); 
+ // 	// $context['menuitem_active'] = 'menuitem-active';
+ // }else{
+	// $context['menuitem_active'] = 'menuitem-active';
+ // }
+/* not ajax, do more.... */
+		
 
 
 
@@ -62,6 +84,41 @@ class StarterSite extends TimberSite {
 }
 
 new StarterSite();
+
+
+
+
+function add_parent_url_menu_class( $classes = array(), $item = false ) {
+
+ChromePhp::log('$item:',  $item);
+
+ChromePhp::log('$classes:',  $classes);
+
+ // if($item->__title == 'KONTAKT'){
+	// $classes[] = 'current-menu-item';
+ // }
+ // ChromePhp::log('$classes, $item:', $classes, $item);
+	// $homepage_url = trailingslashit( get_bloginfo( 'url' ) );
+	// ChromePhp::log('request url:', $_SERVER['REQUEST_URI']);
+	// ChromePhp::log('current item', $item->slug);	
+	// // Exclude 404 and homepage
+	// //if( is_404() or $item->url == $homepage_url ) return $classes;
+	
+
+	// if ( $_SERVER['REQUEST_URI'] =  '/home-3/') {
+	// 	//ChromePhp::log('doit', $_SERVER['REQUEST_URI'], $item->slug);
+	// 	// Add the 'parent_url' class
+	// 	$classes[] = 'current-menu-item';
+	// }
+
+	
+	return $classes;
+}
+
+
+add_filter( 'nav_menu_css_class', 'add_parent_url_menu_class', 10, 2 );
+
+
 
 function myfoo( $text ) {
 	$text .= ' bar!';

@@ -1,7 +1,7 @@
-{% extends "base.twig" %}
 
+{% extends layout %}
 {% block content %}
-	<div class="col-lg-12">
+{# 	<div class="col-lg-12">
 		<hr>
 			{% if title %}
 				<h2 class="intro-text text-center">
@@ -11,7 +11,7 @@
 		<hr>
 
 	</div> 
-	<div class="clearfix"></div>
+	<div class="clearfix"></div> #}
 	<div class="content-wrapper">
 		<article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
 			<section class="article-content">
@@ -23,3 +23,4 @@
 		</article>
 	</div><!-- /content-wrapper -->
 {% endblock %}
+
