@@ -23,6 +23,15 @@ $context['foo'] = 'bar';
 $context['pagination'] = Timber::get_pagination();
      	
 
+//  \ChromePhp::log('locale',get_locale() ); 
+// die;
+if(get_locale() === 'en_US'){
+	header('Location:  /en/news');
+}else{
+	header('Location:  /aktuelles');
+}
+
+
 $templates = array( 'index.twig' );
 
 
