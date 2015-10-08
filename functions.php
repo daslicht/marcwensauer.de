@@ -140,6 +140,12 @@ function simpleblog_themesetup() {
 
 add_action( 'after_setup_theme', 'simpleblog_themesetup' );
 
+
+function my_theme_add_editor_styles() {
+    add_editor_style( 'custom-editor-style.css' );
+}
+add_action( 'admin_init', 'my_theme_add_editor_styles' );
+
 function mytheme_comment($comment, $args, $depth) {
 
 	$GLOBALS['comment'] = $comment;
@@ -176,6 +182,8 @@ function mytheme_comment($comment, $args, $depth) {
 					$is_admin = false;
 				}
 				//ChromePhp::log('admin?: ', $is_admin );
+			}else{
+				$is_admin = false;
 			}	
 		?>
 		<!-- EDIT & Permalink (right parts) -->

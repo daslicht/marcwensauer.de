@@ -1,0 +1,339 @@
+/*!
+ * Start Bootstrap - Business Casual Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+/*    background: url('/assets/image/bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;*/
+    -o-background-size: cover;
+    overflow-y: scroll;
+}
+
+
+#canvas2{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top:0;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1.25em;
+    line-height: 1.6;
+    color: #000;
+}
+
+hr {
+    max-width: 400px;
+    border-color: #999999;
+}
+
+.brand,
+.address-bar {
+    display: none;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.navbar-nav {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.img-full {
+    min-width: 100%;
+}
+
+.brand-before,
+.brand-name {
+    text-transform: capitalize;
+}
+
+.brand-before {
+    margin: 15px 0;
+}
+
+.brand-name {
+    margin: 0;
+    font-size: 4em;
+}
+
+.tagline-divider {
+    margin: 15px auto 3px;
+    max-width: 250px;
+    border-color: #999999;
+}
+
+.box {
+    margin-bottom: 20px;
+    padding: 30px 15px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+    border-radius: 5px;
+}
+
+.intro-text {
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.img-border {
+    float: none;
+    margin: 0 auto 0;
+    border: #999999 solid 1px;
+}
+
+.img-left {
+    float: none;
+    margin: 0 auto 0;
+}
+
+/*FOOTER*/
+        footer {
+            background: #fff;
+            background: rgba(255,255,255,0.9);
+            opacity:0.95;
+            /*height:80px;*/
+        }
+
+        footer p {
+            margin: 0;
+            /*padding: 50px 0;*/
+            /*height:50px;*/
+        }
+
+        footer .row div {
+            margin-top:14px;
+        }
+        #footer_imprint{
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: 10px;
+        }
+
+        #footer_imprint img{
+            width: 19px;
+            opacity:0.8;
+        }
+
+        /*ANIMATE*/
+            #footer_imprint p {color: #39f !important;}
+            @-webkit-keyframes colours {
+                 0% {color: #39f;}
+                 25% {color: #8bc5d1;}
+                 50% {color: #f8cb4a;}
+                 75% {color: #8bc5d1;}
+                100% {color: #39f;}
+
+            }
+            @-moz-keyframes colours {
+                 0% {color: #39f;}
+                 25% {color: #8bc5d1;}
+                 50% {color: #f8cb4a;}
+                 75% {color: #8bc5d1;}
+                100% {color: #39f;}
+
+            }
+
+            #footer_imprint p {
+                -webkit-animation-direction: normal;
+                -webkit-animation-duration: 10s;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-name: colours;
+                -webkit-animation-timing-function: ease;
+                -moz-animation-direction: normal;
+                -moz-animation-duration: 10s;
+                -moz-animation-iteration-count: infinite;
+                -moz-animation-name: colours;
+                -moz-animation-timing-function: ease;
+            }
+
+
+
+.nav li a{
+/*    background-color: blue !important;*/
+   opacity: 1;
+   transition: all .25s ease-in-out;
+   -moz-transition: all .25s ease-in-out;
+   -webkit-transition: all .25s ease-in-out;
+   }
+
+   .fade:hover {
+      opacity: 0.5;
+      }
+
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, a:hover {
+    color: #555;
+    background-color: rgb(255, 253, 201) !important;
+
+}
+.navbar {
+    /*height:53px;*/
+}
+
+
+@media screen and (min-width:1200px) {
+    .box:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+@media (min-width: 1200px){
+    .container {
+        width: 750px !important; 
+    }
+}
+
+@media (min-width: 992px){
+    .container {
+        width: 750px !important;
+    }
+}
+
+@media (min-width: 768px){
+    .container {
+        width: 750px;
+    }
+}
+
+
+header {
+    text-align:center;
+}
+
+#logo{
+    /*width: 630px;*/
+/*    margin-top:25px;
+    margin-bottom:25px;*/
+    width:50% !important;
+    margin: 25px auto;
+
+
+}
+
+/* FOOTER SOCIAL ICONS */
+.social-icon{
+    /*margin: 43px; */
+    width: 50px;
+}
+
+
+@media screen and (min-width:768px) {
+
+    .brand {
+        display: inherit;
+        margin: 0;
+        padding: 30px 0 10px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 5em;
+        font-weight: 700;
+        line-height: normal;
+        color: #fff;
+    }
+
+    .top-divider {
+        margin-top: 0;
+    }
+
+    .img-left {
+        float: left;
+        margin-right: 25px;
+    }
+
+    .address-bar {
+        display: inherit;
+        margin: 0;
+        padding: 0 0 40px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        text-transform: uppercase;
+        font-size: 1.25em;
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: #fff;
+    }
+
+/* NAVIGATION*/
+
+    .navbar {
+        border-radius: 0;
+        min-height: 0;
+
+    }
+
+    .navbar-header {
+        display: none;
+    }
+
+
+
+    .navbar-default {
+        border: none;
+        background: #fff;
+        background: rgba(255,255,255,0.9);
+    }
+
+    .nav>li>a {
+        padding-top: 14px;
+        padding-right: 35px;
+        padding-left:35px;
+
+    }
+
+    .navbar-nav>li>a {
+        line-height: normal;
+    }
+
+    .navbar-nav {
+        display: table;
+        float: none;
+        margin: 0 auto;
+        table-layout: fixed;
+        font-size: 1.25em;
+    }
+}
+
+#language-container {
+    float :right;
+    height:15px;
+    margin-right: 10px;
+    margin-top:0;
+}
+.language-icon{
+    height:100%;
+    float:right;
+    margin-left:5px;
+}
+
+
