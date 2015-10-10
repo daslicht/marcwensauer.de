@@ -45,11 +45,22 @@ class StarterSite extends TimberSite {
 		$context['title'] = "WELCOME";
 		$context['layout'] = "base.twig";
 
-
-	
+		/*Just return Content if the Request is an AJAX Request*/	
 		if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
 			$context['layout'] = "base-ajax.twig";
 		}
+
+		if(get_locale() === 'en_US') {
+			
+	
+		}else{
+			
+		}
+
+	// 	$context['languages'] = icl_get_languages('skip_missing=N&orderby=KEY&order=DIR&link_empty_to=str');
+
+ // \ChromePhp::log('',   icl_get_languages('skip_missing=N&orderby=KEY&order=DIR&link_empty_to=str'));
+ // $languages = 
 //
 
  // $request_url = $_SERVER['REQUEST_URI'];

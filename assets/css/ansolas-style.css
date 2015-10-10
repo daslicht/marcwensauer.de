@@ -475,31 +475,31 @@ textarea.form-control {
 
 /* QTRANSLATE Language Chooser */
 
-    .qtranxs_language_chooser {
+    .language_chooser {
       /*background-color:red;*/
         padding:0 !important;
         width:25px;
         margin:0 auto
     }
 
-    .qtranxs_language_chooser li.active {
+    .language_chooser li.active {
         display:none
     }
 
-    .qtranxs_language_chooser li {
+    .language_chooser li {
         list-style:none; 
     }
 
-    .qtranxs_language_chooser li a{
+    .language_chooser li a{
         background-color:none;
         /* width:23px; */
         margin:  0 auto;
     }
 
-    .qtranxs_language_chooser li a:hover {
+    .language_chooser li a:hover {
         background-color: rgba(0, 0, 0,0) !important;
     }
-    .qtranxs_language_chooser li a img{
+    .language_chooser li a img{
         /*background-color:green;*/
         opacity:0.5;
         width:25px;
@@ -509,7 +509,7 @@ textarea.form-control {
         border-radius: 2px;
     }
 
-    .qtranxs_language_chooser li a img:hover{
+    .language_chooser li a img:hover{
         opacity:1;
     }
 
