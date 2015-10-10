@@ -1,0 +1,29 @@
+<ul class="language_chooser" id="language_chooser">
+	
+	{% if function('get_locale') == 'de_DE' %}
+		{% set class ="active" %}
+	{% else %}
+		{% set class ="" %}
+	{% endif %}
+
+	<li class="{{class}}">
+		<a href="/" hreflang="de" title="Deutsch" >
+			<img src="{{ theme.link }}/assets/image/flag/de.svg" alt="Deutsch">
+		</a>
+	</li>
+	
+	
+	
+	{% if function('get_locale') == 'en_US' %}
+		{% set class ="active" %}
+	{% else %}
+		{% set class ="" %}
+	{% endif %}
+
+	<li class="{{class}}">
+		<a href="/en/" hreflang="en" title="English" >
+			<img src="{{ theme.link }}/assets/image/flag/gb.svg" alt="English">
+		</a>
+	</li>
+
+</ul>
