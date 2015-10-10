@@ -253,6 +253,6 @@ function register_my_menu() {
 }
 add_action( 'after_setup_theme', 'register_my_menu' );
 
-function doit(){
-	wp_nav_menu(array('theme_location' => 'primary'));
-}
+// function doit(){
+// 	wp_nav_menu(array('theme_location' => 'primary'));
+// }
