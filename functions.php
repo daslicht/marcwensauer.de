@@ -38,7 +38,7 @@ class StarterSite extends TimberSite {
 		$context['foo'] = 'bar';
 		$context['stuff'] = 'I am a value set in your functions.php file';
 		$context['notes'] = 'These values are available everytime you call Timber::get_context();';
-		$context['menu'] = new TimberMenu();
+		$context['menu'] = new TimberMenu('primary');
 		$context['menu']->current;
 		
 		$context['site'] = $this;
@@ -248,4 +248,11 @@ function mytheme_comment($comment, $args, $depth) {
 <?php
 
 }
+function register_my_menu() {
+  register_nav_menu( 'primary', __( 'Primary Menu', 'theme-slug' ) );
+}
+add_action( 'after_setup_theme', 'register_my_menu' );
 
+function doit(){
+	wp_nav_menu(array('theme_location' => 'primary'));
+}
