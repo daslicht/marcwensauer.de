@@ -53,8 +53,8 @@
 			<section id="content" class="content" role="main" class="content-wrapper">
  				<div class="row">
  					<div class="box">
- 					{{function(	'qtranxf_generateLanguageSelectCode','image')}}
-
+ 					{# {{function(	'qtranxf_generateLanguageSelectCode','image')}} #}
+						{{function( 'do_action','icl_language_selector' )}}
  {# 					<ul class="qtranxs_language_chooser" id="qtranslate-chooser">
 						<li class="lang-de active">
 						<a href="http://marcwensauer.de/de/kontakt/" hreflang="de" title="Deutsch" class="qtranxs_image qtranxs_image_de"><img src="http://marcwensauer.de/wp-content/plugins/qtranslate-x/flags/de.png" alt="Deutsch"><span style="display:none">Deutsch</span></a></li>
