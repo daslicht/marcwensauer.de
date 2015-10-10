@@ -211,6 +211,7 @@ hr {
 .navbar-default .navbar-nav > .current-menu-item > a:hover, 
 .navbar-default .navbar-nav > .current-menu-item > a:focus, 
 .menuitem-active,
+.current-menu-parent
 .nav-item a:hover { 
     color: #555;
     background-color: rgb(255, 253, 201) !important;
